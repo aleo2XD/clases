@@ -1,10 +1,18 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
-
+import Tarjeta from './orquestador/tarjeta.jsx';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import docs from "./formalario.json"
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+    <StrictMode>
+        {
+            docs.map ((Doc) => (
+            <Tarjeta
+                        key = {Doc.id}
+
+                    />
+            ))
+        }
+
+
+       
+    </StrictMode>
