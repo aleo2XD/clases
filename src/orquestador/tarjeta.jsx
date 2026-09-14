@@ -1,16 +1,14 @@
-import '../styles/tarjeta.css'
-import { useState } from "react"
-import Boton from "../componentes/boton.jsx"
-import Index from "../componentes/index.jsx"
-import Pregunta from "../componentes/pregunta.jsx"
+import '../style/Tarjeta.css'
+import Boton from '../componentes/boton.jsx'
+import Index from '../componentes/index.jsx'
+import Pregunta from '../componentes/pregunta.jsx'
 
-
-export function Tarjeta({Pregunta, Index, Boton}) {
+export default function Tarjeta({ pregunta = 'Sin texto', index = 0, total = 1, onNext = () => {} }) {
   return (
     <div className="tarjeta">
       <Index index={index} total={total} />
       <Pregunta pregunta={pregunta} />
       <Boton onClick={onNext}>Siguiente</Boton>
     </div>
-  );
+  )
 }

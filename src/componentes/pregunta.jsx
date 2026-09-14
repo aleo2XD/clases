@@ -1,9 +1,7 @@
-import '../Style/Tarjeta.css'
-
-export default fuction Pregunta({Pregunta}){ 
+export default function Pregunta({ pregunta = 'Sin texto' }) {
     return (
-        <div ClassName="Pregunta">
-            {Pregunta}
+        <div className="Pregunta">
+            {pregunta}
         </div>
     )
 }

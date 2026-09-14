@@ -1,9 +1,7 @@
-import '../Style/Tarjeta.css'
-
-export default fuction Boton {(Boton)} {  
+export default function Boton({ children, onClick, type = 'button' }) {
     return (
-        <button ClassName="Boton">
-            {Boton}
+        <button type={type} className="Boton" onClick={onClick}>
+            {children}
         </button>
     )
 }

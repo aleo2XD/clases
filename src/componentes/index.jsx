@@ -1,7 +1,7 @@
-import '../Style/Tarjeta.css'
-
-export default function Index({Index}) {
+export default function Index({ index = 0, total = 0 }) {
     return (
-        <input className="Index" placeholder={Index}/>
+        <div className="Index">
+            {index + 1} / {total}
+        </div>
     )
 }

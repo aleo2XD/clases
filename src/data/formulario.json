@@ -1,5 +1,10 @@
 [
-    {
-        "id": 1
-    }
+  {
+    "id": 1,
+    "pregunta": "¿Qué es React?"
+  },
+  {
+    "id": 2,
+    "pregunta": "¿Qué es JSX?"
+  }
 ]
